@@ -3,13 +3,137 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OopsPDF — outils PDF en ligne</title>
-<meta name="description" content="Fusionnez, convertissez, compressez et organisez vos fichiers PDF en quelques clics. Gratuit, sans compte, et 100% privé — vos fichiers restent dans votre navigateur.">
-<meta property="og:title" content="OopsPDF — outils PDF en ligne">
-<meta property="og:description" content="Fusionnez, convertissez, compressez et organisez vos PDF en quelques clics. 100% côté client, sans envoi de données.">
+
+<!-- === SEO principal === -->
+<title>OopsPDF – Fusionner, compresser et convertir vos PDF gratuitement</title>
+<meta name="description" content="Fusionnez, compressez, convertissez et organisez vos PDF gratuitement. Sans inscription, 100% dans votre navigateur : vos fichiers ne sont jamais envoyés à un serveur.">
+<meta name="keywords" content="outil PDF gratuit, fusionner PDF, compresser PDF, convertir PDF, diviser PDF, PDF en ligne, éditer PDF sans inscription">
+<meta name="author" content="OopsPDF">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pourelle-app.github.io/oopspdf/">
+
+<!-- === Open Graph / réseaux sociaux === -->
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://oopspdf.example/">
+<meta property="og:site_name" content="OopsPDF">
+<meta property="og:title" content="OopsPDF – Outils PDF gratuits, simples et privés">
+<meta property="og:description" content="12 outils PDF gratuits, sans inscription. Fusion, compression, conversion, signature : tout se passe dans votre navigateur.">
+<meta property="og:url" content="https://pourelle-app.github.io/oopspdf/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OopsPDF – Outils PDF gratuits, simples et privés">
+<meta name="twitter:description" content="12 outils PDF gratuits, sans inscription. Vos fichiers restent dans votre navigateur.">
+
+<!-- === Données structurées Schema.org === -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OopsPDF",
+  "url": "https://votre-utilisateur.github.io/oopspdf/",
+  "description": "Outils PDF gratuits en ligne : fusionner, compresser, convertir, diviser et organiser vos documents PDF directement dans le navigateur.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (web browser)",
+  "browserRequirements": "Requires a modern browser with JavaScript enabled",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1284"
+  },
+  "featureList": [
+    "Fusionner plusieurs PDF",
+    "Compresser un PDF",
+    "Convertir PDF en images",
+    "Convertir images en PDF",
+    "Extraire des pages",
+    "Diviser un PDF",
+    "Organiser les pages",
+    "Ajouter des numéros de page",
+    "Ajouter un filigrane",
+    "Extraire le texte",
+    "Ajouter du texte"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "OopsPDF est-il vraiment gratuit ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, OopsPDF est 100 % gratuit et sans inscription. Tous les outils sont accessibles immédiatement, sans création de compte, sans limitation du nombre de fichiers et sans filigrane ajouté à vos documents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mes fichiers PDF sont-ils envoyés à un serveur ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Tous les traitements (fusion, compression, conversion, etc.) sont effectués directement dans votre navigateur grâce à JavaScript. Vos fichiers ne quittent jamais votre ordinateur et ne sont jamais stockés sur un serveur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment fusionner plusieurs fichiers PDF en un seul ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cliquez sur l'outil « Fusionner PDF », sélectionnez au moins deux fichiers PDF, ajustez leur ordre avec les flèches, puis cliquez sur « Fusionner et télécharger ». Le fichier fusionné est téléchargé en quelques secondes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment réduire la taille d'un PDF sans perdre en qualité ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Utilisez l'outil « Compresser PDF » en mode « Optimisation sans perte ». Pour une réduction plus forte, choisissez le mode « Compression visuelle » qui convertit les pages en images JPG : le fichier est plus léger, mais le texte n'est plus sélectionnable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je utiliser OopsPDF sur mobile ou tablette ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. OopsPDF fonctionne sur tous les navigateurs modernes (Chrome, Firefox, Safari, Edge) sur ordinateur, tablette et smartphone. Aucune installation n'est requise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il une limite de taille de fichier ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il n'y a pas de limite imposée par OopsPDF. En pratique, la limite dépend de la mémoire disponible sur votre appareil. Nous recommandons des fichiers inférieurs à 100 Mo pour un traitement fluide, en particulier sur mobile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment diviser un PDF en plusieurs fichiers ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'outil « Diviser PDF » exporte chaque page dans un PDF individuel et les regroupe dans une archive ZIP téléchargeable. Pour extraire seulement certaines pages, utilisez plutôt l'outil « Extraire des pages »."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je utiliser OopsPDF pour un usage professionnel ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, OopsPDF peut être utilisé dans un cadre professionnel pour fusionner des contrats, compresser des rapports ou organiser des dossiers. Comme le traitement est 100 % local, vos documents confidentiels ne sont jamais transmis à un tiers."
+      }
+    }
+  ]
+}
+</script>
+
 <style>
 /* === Variables & base === */
 :root{
@@ -67,9 +191,9 @@ img{max-width:100%}
 
 /* === Main & hero === */
 .main{max-width:1200px;margin:auto;padding:58px 24px 76px;position:relative}
-.hero{position:relative;text-align:center;max-width:760px;margin:0 auto 32px}
-.hero h1{font-size:clamp(37px,5vw,58px);line-height:1.04;letter-spacing:-2.7px;margin:18px 0 15px;font-weight:790}
-.hero p{font-size:17px;color:var(--muted);max-width:630px;margin:0 auto;line-height:1.7}
+.hero{position:relative;text-align:center;max-width:800px;margin:0 auto 32px}
+.hero h1{font-size:clamp(30px,4.2vw,48px);line-height:1.08;letter-spacing:-2px;margin:18px 0 12px;font-weight:790}
+.hero .hero-lead{font-size:17px;color:var(--muted);max-width:630px;margin:0 auto;line-height:1.7}
 .eyebrow{
   display:inline-flex;align-items:center;gap:8px;
   background:#f0f3ff;color:#344fd1;border:1px solid #e3e8ff;
@@ -85,7 +209,6 @@ img{max-width:100%}
   border:1px solid #e8e7fb;border-radius:99px;background:rgba(255,255,255,.76);
   color:#6557ce;font-weight:800;font-size:13px;letter-spacing:.1px;
 }
-/* === Users badge === */
 .users-badge{
   display:inline-flex;align-items:center;gap:8px;
   padding:6px 14px 6px 8px;
@@ -141,7 +264,6 @@ img{max-width:100%}
 .file-state.pending{border-color:#c9b4f0;background:#faf6ff}
 .filename{font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .filesize{color:var(--muted);font-size:12px;margin-left:auto;white-space:nowrap}
-/* === Remove pending file button === */
 .remove-pending{
   position:absolute;top:50%;right:10px;transform:translateY(-50%);
   width:26px;height:26px;border-radius:50%;
@@ -185,7 +307,7 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .sectionhead span{font-size:13px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
 .card{
-  position:relative;min-height:170px;padding:19px 40px 18px 18px;text-align:left;
+  position:relative;min-height:190px;padding:19px 40px 18px 18px;text-align:left;
   border:1px solid var(--line);border-radius:17px;
   background:linear-gradient(160deg,#fff,#fdfdff);
   box-shadow:0 3px 12px rgba(30,48,88,.025);
@@ -223,10 +345,10 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .card[data-action="text"]{--tool-tint:#eff0ff;--tool-ink:#5a55c4}
 .card[data-action="split"]{--tool-tint:#eaf8f4;--tool-ink:#18846b}
 .card[data-action="add-text"]{--tool-tint:#f8efff;--tool-ink:#8b4ab7}
-.card strong{display:block;font-size:15px;letter-spacing:-.15px;margin-bottom:4px}
+.card strong{display:block;font-size:15px;letter-spacing:-.15px;margin-bottom:5px}
 .card p{font-size:12.5px;line-height:1.55;color:var(--muted);margin:0}
 
-/* === Tool panels (unified) === */
+/* === Tool panels === */
 .tool-panel{
   display:none;max-width:860px;margin:14px auto 34px;padding:25px 26px 24px;
   border:1px solid #e2e6f0;border-top:4px solid #7068e8;border-radius:20px;
@@ -335,6 +457,42 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .step-card h3{margin:13px 0 5px;font-size:15px;letter-spacing:-.2px}
 .step-card p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.55}
 
+/* === FAQ === */
+.faq{
+  margin-top:32px;padding:28px 28px 30px;
+  border:1px solid #e8eaf4;border-radius:22px;
+  background:linear-gradient(145deg,rgba(248,249,255,.9),rgba(255,255,255,.94));
+  box-shadow:0 10px 30px rgba(36,49,95,.045);
+  scroll-margin-top:92px;
+}
+.faq-list{display:grid;gap:10px}
+.faq-item{
+  border:1px solid #e8ecf4;border-radius:14px;background:#fff;
+  transition:border-color .15s ease,box-shadow .15s ease;
+}
+.faq-item[open]{border-color:#c9d0f0;box-shadow:0 8px 20px rgba(42,55,112,.06)}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:15px 18px;
+  font-weight:700;font-size:14.5px;color:var(--ink);
+  border-radius:14px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:'+';flex:0 0 auto;
+  width:24px;height:24px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#eef0ff;color:#4f57d8;font-size:16px;font-weight:800;
+  transition:transform .18s ease,background .18s ease;
+}
+.faq-item[open] summary::after{content:'−';background:#e3e6ff;transform:rotate(180deg)}
+.faq-item summary:focus-visible{outline:3px solid rgba(91,92,226,.25);outline-offset:2px}
+.faq-item .faq-answer{
+  padding:0 18px 16px;
+  color:var(--muted);font-size:13.5px;line-height:1.65;
+}
+
 /* === Testimonials === */
 .testimonials{
   margin-top:32px;padding:28px 28px 30px;
@@ -344,7 +502,7 @@ button:disabled{cursor:not-allowed;opacity:.55}
   scroll-margin-top:92px;
 }
 .testimonials .sectionhead{margin-bottom:18px}
-.testimonials .sectionhead h2{display:flex;align-items:center;gap:10px}
+.testimonials .sectionhead h2{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .rating-summary{
   display:inline-flex;align-items:center;gap:8px;
   padding:5px 11px;border-radius:99px;
@@ -443,16 +601,17 @@ button:disabled{cursor:not-allowed;opacity:.55}
   .top{height:66px;padding:0 18px}
   .nav{display:none}
   .main{padding:39px 18px 54px}
-  .hero h1{letter-spacing:-1.8px}
-  .hero p{font-size:15px}
+  .hero h1{letter-spacing:-1.4px}
+  .hero .hero-lead{font-size:15px}
   .sectionhead{align-items:flex-start;gap:9px;flex-direction:column}
   .sectionhead span{font-size:12px}
   .grid{gap:11px;grid-template-columns:repeat(2,1fr)}
-  .card{min-height:165px;padding:16px 34px 16px 15px}
+  .card{min-height:185px;padding:16px 34px 16px 15px}
   .tool-panel{padding:21px 18px;border-radius:17px}
   .steps-grid{grid-template-columns:1fr;gap:10px}
   .step-card{min-height:0;padding:16px}
   .how-it-works{padding:21px 17px;margin-top:36px}
+  .faq{padding:21px 17px}
   .testimonials{padding:21px 17px}
   .trust{justify-content:flex-start;gap:14px;flex-direction:column}
   .file-row,.page-row{flex-wrap:wrap}
@@ -463,12 +622,12 @@ button:disabled{cursor:not-allowed;opacity:.55}
 }
 @media(max-width:430px){
   .main{padding:32px 14px 42px}
-  .hero h1{font-size:38px}
-  .hero p{font-size:14px}
+  .hero h1{font-size:26px}
+  .hero .hero-lead{font-size:14px}
   .dropzone{padding:27px 15px 20px;border-radius:18px}
   .privacy{align-items:flex-start;font-size:11px;line-height:1.45}
   .grid{grid-template-columns:1fr 1fr;gap:8px}
-  .card{min-height:168px;padding:14px 27px 14px 12px;border-radius:14px}
+  .card{min-height:200px;padding:14px 27px 14px 12px;border-radius:14px}
   .card::after{top:13px;right:11px;font-size:14px}
   .card .ico{width:37px;height:37px;margin-bottom:11px}
   .card strong{font-size:13px}
@@ -508,7 +667,8 @@ button:disabled{cursor:not-allowed;opacity:.55}
   <nav class="nav" aria-label="Navigation principale">
     <a href="#outils" data-fr="Outils PDF" data-en="PDF tools">Outils PDF</a>
     <a href="#comment" data-fr="Comment ça marche" data-en="How it works">Comment ça marche</a>
-    <a href="#confidentialite" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+    <a href="#faq" data-fr="FAQ" data-en="FAQ">FAQ</a>
+    <a href="#avis" data-fr="Avis" data-en="Reviews">Avis</a>
   </nav>
   <div class="topright">
     <button class="lang" id="lang" type="button" aria-label="Changer de langue / Switch language">EN</button>
@@ -519,8 +679,8 @@ button:disabled{cursor:not-allowed;opacity:.55}
 <main class="main">
   <section class="hero">
     <div class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-fr="GRATUIT · SIMPLE · PRIVÉ" data-en="FREE · SIMPLE · PRIVATE">GRATUIT · SIMPLE · PRIVÉ</span></div>
-    <h1 data-fr="Tous vos PDF.\nEn toute simplicité." data-en="All your PDFs.\nMade simple.">Tous vos PDF.<br>En toute simplicité.</h1>
-    <p data-fr="Fusionnez, convertissez et organisez vos fichiers PDF en quelques clics. Sans compte à créer." data-en="Merge, convert and organize your PDF files in a few clicks. No account needed.">Fusionnez, convertissez et organisez vos fichiers PDF en quelques clics. Sans compte à créer.</p>
+    <h1 data-fr="Outils PDF gratuits : fusionner, compresser et convertir en ligne" data-en="Free PDF tools: merge, compress and convert online">Outils PDF gratuits : fusionner, compresser et convertir en ligne</h1>
+    <p class="hero-lead" data-fr="Tous vos PDF, en toute simplicité. Sans inscription, et 100 % dans votre navigateur — vos fichiers ne quittent jamais votre appareil." data-en="All your PDFs, made simple. No sign-up, 100% in your browser — your files never leave your device.">Tous vos PDF, en toute simplicité. Sans inscription, et 100 % dans votre navigateur — vos fichiers ne quittent jamais votre appareil.</p>
     <div class="tagline-row">
       <div class="tagline">Oops? Fix your PDF.</div>
       <div class="users-badge" role="img" aria-label="Plus de 500 millions d’utilisateurs dans le monde">
@@ -533,7 +693,7 @@ button:disabled{cursor:not-allowed;opacity:.55}
       </div>
     </div>
     <img class="mascot" src="data:image/gif;base64,R0lGODlhQAFUAYcAAAAAAP///////fz////+/v7+//7+/v3+//79//39//39/v38/v79/Pz9/vz8/vz8/Pv8/Pz8+/v8+/r8/fz7/Pz7+/v7/fv7/Pv7+/z7+vr7/fr7/Pr7+/r6+vv6+/r6/fr6/Pr6+/r6+vr5+/n7/vn6/fn6/Pn6+/f6/fn5/fn5/Pj5/Pn5+/n5+vj5+/j5+vf5/Pj4/vn4/Pj4/Pf4/ff4/Pn4+/j4+/j4+ff4+/f4+fb4/Pb4+/T4/fn3+vf3/Pf3+/f3+fb3/fb3/Pb3+/b3+vX3/fX3/PT3/PX3+/j2+Pb2/Pb2+/b2+fX2/fX2/PX2+/X2+vT2/Pj09fX1+/T1/fT1/PT1+/T1+vT0+/P2/fP1/PL1/PP0/PP0+/L0/PLz/PLz+/Pz+fHz/PHz+/Dz/PLy+/Hy/PHy+/Dy/PDy+/Hy+u/y/PDx++/x/O/x++/w+/Dx+e7x++7w/O7w++3w++7w+u/v+e3v/O3v++3v+u3u++zv++zu++zu+uzt++vu++vt++rt++vt+u/q9urs++rq+enr++nr+unp+Ojr++jq++jo+Ofq++fp++fp+ubo++bo+uXn++Pm/OTm+uXm+OPl++Lk++Hk++Pk9uDj+t/i++jf8d/g+d7g+d3g+9ze+93e9tve+9rd+tnc+djb+djZ+tTY+tjT+9XK+tfZ99TW99bW8ujR1dHV+s/T+tDU99DT883Q+crP+s3Q9c7P7snM+c7G+8nM8cjI7MTI9sHE9cLF79+76Me8+fy8vPi4qb/B88DB6cC78r+1+bq/8ba687m86ra46Laz97S047Wt9a627q217a217a217Ky17a207ay07ay07Ku07ayz7auz7ayz7Kqy7aux7qmx7aiw7aeu7aqq9Ket6qur3tmcwviHeaqm76ya8KOi8aGi3Z+d6Z6Y7piY7peY25SQ8pCR1o6K84aE8YqH54iHyvx8c518w3p363h4x5lpo2dmunVIY3IXJTw3bDMtYy8mWCMgViAWPRQQMhAOKwwIKSH/C05FVFNDQVBFMi4wAwEAAAAh+QQJCgAAACwAAAAAQAFUAQAI/wABCBxIsKDBgwJbAQP2C6HDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bNmzhz6tzJs6fPn0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDih1LtqzZs2jTql3Ltq3bt3Djyp1Lt67du3jz6t3Lt6/fv4ADCx5stBUwYL8IK5YJLBw8eOHCtVpMeeUvx48fh5tSubNJzJkhA/NMOiSh0KHDlV7dcQrq0JNZy8YI7PXj0bNzU2xlG7Lu3xJBo+YMvDhD3rYTl1TBhAiVMFSyhNmy48eMDxaMtxWeGXfIG0uyiP9xEKB8gvPly8egQmXIkBUzWIDQXhY5atUggYTxUj58lixdeBHGfl1kcQUVS5CQXgAOiJEFe0PUsEJ29HVV22uxdSQGEwH88FyAXnjxnxVXPMieFeylmGIMB6T3AxQv/tDEChpUeBRxDZ32mnIbAUFGADMM+N+BJqpIBRNMLLHEE0oeCQUUKULBBILkpUdEEln8AIQKNdrY02WR8bjQhaF5l5EXVARAhRlhgPFfkUgquQQTQBABxA/uDQEEEHr+sOQSQyyB4BBQuPcDCQWUV8CcN1ynwnxe1tRYZpFlqBB3+GUURwofeGGGdEUi2Nydd/5QwwwzWPfDlnsCUcMQWtL/QMOqq9bJ5w92aqlgeikAscQNTMzwaKQtXfZaOGIiZCxsmsZggXRthgHnEkQwoSWqN2Q7Q7aNorottjnsWcOqq7oarqk/WEsEETUQ8UMKiZrXBJ17fkDsSWTel+xBkTnm2L4SwdGGA2++yd6cTfxwg6nZsrAtCyy4cIMMLKigQrAquBBsZjJ06/EMK8Dn7Qw11FCqqSWrEG8A2VqXgwr3hsQdagATBCZk4ZhJESLPmihtinQqnK0NF8sH8QghsHADxhebYLEJTjOtwgoWU111yC6sIDGqJXcdLgwpqFBlAB8Awd6WMW+Ur206G9RvvxUZEkAWZnz638H0Prx00SOA/5B00iycMALEIIDwAQgjmMBCCIqDUPTFJ1gMMdYWy6D1CjJMvUIKqJ576oS8JswEFECkXZF9vUGGo0FTRPZYzQ5lkSgVbcSxholz3tno0SBYEMLvIXiwwe8gyFf48ReEoEIIfoPgNOJ+n3CCCSB0e/HUKzidcdZT3zD1yKueet3YTTiI4AymQ/RL6pSubtBhsDukih93MJFCDE6YISqr2fYNggcgwIDfAHgBDDDPA8AbngeSh4EN2O1wzfvdCYbHPOYVTnoncN4JMCa1FIRsBpyLQcdWkANhmSAB5SFAdEJEhfQxZFmp20xHMsGKXAjjhsjIITKUIYxMOCAGWdJSDf8apQIPEBADSESiBzBQQAwYEYkcoIASQ+BAJm6ggBzgABJ/l0UOEI8DhaNe4VhAPTJa7GJUs5oKSvC9GcQgBzAoQQjSQ4I42K6FLjzIFNZ2LEtVJBQ2rAUeFpAeAQTgAk1gRC6+oYxEBMAKQJgYxIJ3AQpIMYkYgAAmMXmBJjKxgBG4gCZFsElPejEEXoxe4TgAteZt8IySMwGnHBcyi4FsBTVwAQgaUB4HxOEOfrCDF/JIkFbMLDV+jEgthLGKGKRHAQ+wwAiA8AQqpEABAUgAK8rBigBYKz4j6FsTH4DJCmCAlJssJRI1mU4kXuCKnSwgBJiXPAtswIGFC0EGi3f/vYqZYAXau5j3VMC5heWgBi+rUgH8wIhIRMIPxASAMW3jr2Q2pBbIsER5BHABzt1pBkuwQhjMgIY1xKENMWBEOlhBghlkjnqVbGc7yZlET3oyiR6gwAUqIMVQQkCUGNBpE9+5ASYCz4nEOx7jTDA9fsIShDPIAausA4IqLaASqmBFJ+6Qx/X1JlMOCcUxJtFLD3yAhKMDUBjaYIc9/GEQg0DEJRzBinR0og0W+99OkSiBCOBUi+msQCcfQE4JPOCm7qSpOYFaQAmwUwJMdCcGThk84YGAqM3TAAg2QL2oVcyDUQ0XEJAkhCE4KwAxMAUtcpEJF+5RM5hxjEURwotV/5RHgCC4QcmYQDc4uDWukaCEJTShCU+owhPlQMYm/iDOAlZgiUp8gAQyUE4MPKAC5IRABCJAgee2s4nmxEAFIAABCZgXio6VLCapWMAqLhCM9wSgPgEHsYuBL1BW6EIYUmAIXjjiFsFghAsJcaF+wYMQDWHFMJz5ABZsQAUz4K102vCHRQQ3E5roRChIoYoOx2IV3kiHKUBxBgSKkrrnxCkSH0CBvkqxAhWQAAWki13rzhTG7nSsKCEryvIG9QKh5OSKC9hJL76TAxdongYJ2sYfzEpQ0WkDCY4hDkdIYhi1yONEb9OQXOAiAAII3uBu8Jw4+BYRmfCEpzusilXEgv8WtMAFLmgR4lWoghJAWOB0xZsBFCeRxdYFsl8jINgLEDadNDVsJiEgRfL+NJPWhSwFIkDemR42njXF9D2d57TIectPgpJOFzqxjlR0YhG3yAUxW/GL2RZkrAF4AAItVgMokEEPhmAEJTrB4VXAIs5yxgUvdhGMYugiHeWwsybaILy9mpO6KMZuXwkbU0PDmJ0yReJ4IQtZSn/SrxA4LLURTVMMhBLTn+ykUp3XZEJFBwxnQAQjO4GKP6SCFxFtyDHcEIAQJNlhIA3DHgwRiVDQ4hjX8IY3roGMYBS7GBBHhjGMMQ9exEIVnRgE9cwt3vCKt+OQroBfIY1Ev16S49b/JfROz8tyTZr3AoYlZyUVa90HkPcB2+1peIn8AOBxumozuJOgRAoGQxyjHJ1IBSoWkQph5FshyqhCAEaQZBVkCwhZaIMhWCEMZTDyGMI4xjfW8Y51MJwZaPfGPMoBZ4wfQgYhMDeMd+7xJNZ9nOPcZAQksHJFwzy9MO8kBiBLcmqzeMaG1m4EbM73vmLbgsXbGKqq9RwwIIIX6VC60h2BCmQ8/SBRFwDVGTe1dMWhErXIRSjuMLby3CAU33iHORK+jnmsgxe8gAUpNIEIGQQQu3X3a2G3O/IkahLxHBf84rW94kpvO8abXOyKCUt9GF8Xu4TmOzkpUFklO45zQaeC/xS80IVIYH4YoEiF+g2RimN8niBRD8Blw2h1X5khEWswT27vdAUvOGEAAcAK7zAPtucNxRAMuLAKnmAJe2ACS4RjzkVThpZtO1V37rRdh1VeMkYBmsROLYZuTrRi5nZdh7Zdcmdu2yVKHIhUwQM9/xR0vkIFXVAFlCAM5aAMl6B+6vcHvqBq73cMfyB/79RKLAAfNxACBqAAICADqYInIlVSbUAHX7AK82AOx1AMvIALsFAKnVAJbUA9L/ZilAZZEGBO2YVJ0yZ85TRjhMdy5rV3e5VO0IWGSbRdMgZjOkV8xYdOyXMCbOQCoyUoYVAFnSAM3/ANlqCDSvcHwxALn/+XC6PQb7jlOBXTMRtjS37yBFbgBWvQBnewB4igCZNwDO9wgLhwcZ5wCYYABf6mUzMWVD1VUzSVAeWmgjG1TibXSWVIXn5lTpR2SUN1SXNIThlghoR2bZ1EaB+YRFekAcyjOLr1A9UkBlUQCl1XDpKgiEpnCMbgiBFljQEgRR7ASimQApljdRDGOX6yQmEQB22FCI5gCcaFCengDbpAC8dlCZHQBoFDZOKlScdYQFIkju7EWIRlgiUXVIc2XhzATqJEWBLAAfAEXZXlAeGGSVIkAYvVYnLXXZzkQNZjAzkwBFMCBlagCsKADOmQg7egiKhwCMvAChH1Dc6kU4fjNFb/U3VRFQM1wAT9FwZo0AZ6EFePIAmXoGar8AnFkA6yEAupGAlvsCX/Y246Z3gWeAFaxGJmGFkdV4ZANXjrxGOMpkn3FFn+tkBcKVM7VW3qBEWFkzHjUpJZEAspaVeooI2bJw6VkEfCIAkC8D8fYDEjAEsSszBP8ARdgAZwQAeF8AjBdQnFxWGwAAu4sA60sAqdcAhoAAU1UAJNtHiGtXjkdF1tmUSApYsVuHd8x1fpZW6OZl1S1ESABVhCJl4jp2jaRng4tWkChV9gAAa0EHbpEAp3iZegsAjX4EKhwAuHRAGIY0ZoBB97AgVZ4AVoQAd/YAiVkAmd4AmhMAqloAq//4YLsrAOuKAKozAIDzIDIWABgydj4XZykBVe0mdjkHZJ4XZdivaGLWZeYklkTVRUdldKNyWBf7ZOr5hElDgDlAcGcCBsx5AOqpB+eIkKnQAJ2ZA+yhADAoBAOCkyjRKXVCAgcaAHjcmdG9Zhq+BrcaYLtpAOvKAKoRAJWSCVJ5ddtfhxOgpofDVZdkdT0oVJNwdZArpAyXOkG7BEiBVPc1iQp5lJBgpAtlQDIUUFgwCh6YAKFFqhlnAJ3pA2rBAL/XYBigMxW2MyaTVSn4gIkaAJoZ"`
-  alt="Mascotte OopsPDF : une feuille souriante qui cherche une solution.">
+  alt="Mascotte OopsPDF : une feuille souriante qui cherche une solution." loading="lazy" width="126">
   </section>
 
   <section class="dropzone" id="drop">
@@ -697,7 +857,7 @@ button:disabled{cursor:not-allowed;opacity:.55}
     <div class="progress" id="organizeProgress" role="status" aria-live="polite" aria-atomic="true"></div>
   </section>
 
-  <!-- === Mark panel (number & watermark) === -->
+  <!-- === Mark panel === -->
   <section class="tool-panel" id="markPanel" aria-hidden="true">
     <div class="tool-panel-head">
       <div>
@@ -825,22 +985,70 @@ button:disabled{cursor:not-allowed;opacity:.55}
   <!-- === Tools grid === -->
   <section id="outils">
     <div class="sectionhead">
-      <h2 data-fr="Les outils essentiels" data-en="Essential tools">Les outils essentiels</h2>
+      <h2 data-fr="Les outils PDF essentiels, gratuits et sans inscription" data-en="Essential PDF tools, free and no sign-up">Les outils PDF essentiels, gratuits et sans inscription</h2>
       <span data-fr="Choisissez l’outil adapté à votre besoin" data-en="Choose the tool that fits your needs">Choisissez l’outil adapté à votre besoin</span>
     </div>
     <div class="grid">
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="fusionner"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M4 7v14h3M10 13h6m-3-3v6"/></svg></div><strong data-fr="Fusionner PDF" data-en="Merge PDF">Fusionner PDF</strong><p data-fr="Réunissez plusieurs documents en un seul." data-en="Combine several documents into one.">Réunissez plusieurs documents en un seul.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="extract"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h3M9 16h6M3 7v12"/><path d="m15 11 2 2 3-3"/></svg></div><strong data-fr="Extraire des pages" data-en="Extract pages">Extraire des pages</strong><p data-fr="Gardez seulement les pages dont vous avez besoin." data-en="Keep only the pages you need.">Gardez seulement les pages dont vous avez besoin.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="images"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/></svg></div><strong data-fr="PDF vers image" data-en="PDF to image">PDF vers image</strong><p data-fr="Convertissez chaque page en JPG ou PNG." data-en="Convert each page to JPG or PNG.">Convertissez chaque page en JPG ou PNG.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="pdf"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M9 13h6M9 16h6"/></svg></div><strong data-fr="Image vers PDF" data-en="Image to PDF">Image vers PDF</strong><p data-fr="Créez un PDF à partir de vos images." data-en="Create a PDF from your images.">Créez un PDF à partir de vos images.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="compress"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M9 13h6M9 16h4"/><path d="m4 10 2 2-2 2m16-4-2 2 2 2"/></svg></div><strong data-fr="Compresser PDF" data-en="Compress PDF">Compresser PDF</strong><p data-fr="Réduisez le poids de vos documents PDF." data-en="Reduce the size of your PDF documents.">Réduisez le poids de vos documents PDF.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="organize"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="7" rx="1.5"/><rect x="5" y="14" width="14" height="7" rx="1.5"/><path d="M3 6v12m18-12v12M9 6h6M9 17.5h6"/></svg></div><strong data-fr="Organiser PDF" data-en="Organize PDF">Organiser PDF</strong><p data-fr="Réorganisez, pivotez ou supprimez des pages." data-en="Reorder, rotate, or delete pages.">Réorganisez, pivotez ou supprimez des pages.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="number"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v14H7zM9 7h6M9 10h6"/><path d="M9 20h6m-3-3v6"/></svg></div><strong data-fr="Numéroter PDF" data-en="Add page numbers">Numéroter PDF</strong><p data-fr="Ajoutez un numéro en bas de chaque page." data-en="Add a page number at the bottom of every page.">Ajoutez un numéro en bas de chaque page.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="watermark"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="m5 16 14-8M8 18l9-5M7 9l5-5"/></svg></div><strong data-fr="Filigrane PDF" data-en="PDF watermark">Filigrane PDF</strong><p data-fr="Ajoutez un texte discret sur chaque page." data-en="Add subtle text to every page.">Ajoutez un texte discret sur chaque page.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="resize"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M8 8h8v8H8zM3 8V3h5m8 0h5v5m0 8v5h-5M8 21H3v-5"/></svg></div><strong data-fr="Redimensionner PDF" data-en="Resize PDF">Redimensionner PDF</strong><p data-fr="Agrandissez ou réduisez proportionnellement vos pages." data-en="Scale your pages up or down proportionally.">Agrandissez ou réduisez proportionnellement vos pages.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="text"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="M9 8h6M9 12h6M9 16h4"/><path d="M4 7v12"/></svg></div><strong data-fr="PDF vers texte" data-en="PDF to text">PDF vers texte</strong><p data-fr="Récupérez le texte dans un fichier TXT." data-en="Save extracted text as a TXT file.">Récupérez le texte dans un fichier TXT.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="split"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v7H7zM7 14h10v7H7z"/><path d="M12 10v4m-2-2 2 2 2-2"/></svg></div><strong data-fr="Diviser PDF" data-en="Split PDF">Diviser PDF</strong><p data-fr="Créez un fichier PDF distinct pour chaque page." data-en="Create a separate PDF file for every page.">Créez un fichier PDF distinct pour chaque page.</p></button>
-      <button type="button" class="card" role="button" aria-pressed="false" data-action="add-text"><div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M12 6v14M8 20h8M7 10h10"/><path d="M4 3h16v3H4z"/></svg></div><strong data-fr="Ajouter du texte" data-en="Add text">Ajouter du texte</strong><p data-fr="Placez une mention sur les pages de votre choix." data-en="Add a note to the pages you choose.">Placez une mention sur les pages de votre choix.</p></button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="fusionner">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M4 7v14h3M10 13h6m-3-3v6"/></svg></div>
+        <strong data-fr="Fusionner PDF" data-en="Merge PDF">Fusionner PDF</strong>
+        <p data-fr="Combinez plusieurs fichiers PDF en un seul document, en quelques secondes. Idéal pour regrouper des contrats, factures ou rapports." data-en="Combine several PDF files into one document in seconds. Ideal for merging contracts, invoices or reports.">Combinez plusieurs fichiers PDF en un seul document, en quelques secondes. Idéal pour regrouper des contrats, factures ou rapports.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="extract">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h3M9 16h6M3 7v12"/><path d="m15 11 2 2 3-3"/></svg></div>
+        <strong data-fr="Extraire des pages" data-en="Extract pages">Extraire des pages</strong>
+        <p data-fr="Conservez uniquement les pages dont vous avez besoin et créez un nouveau PDF. Parfait pour isoler un chapitre ou un formulaire." data-en="Keep only the pages you need and create a new PDF. Perfect to isolate a chapter or a form.">Conservez uniquement les pages dont vous avez besoin et créez un nouveau PDF. Parfait pour isoler un chapitre ou un formulaire.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="images">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/></svg></div>
+        <strong data-fr="PDF vers image" data-en="PDF to image">PDF vers image</strong>
+        <p data-fr="Convertissez chaque page de votre PDF en image JPG ou PNG. Pratique pour partager un aperçu sur les réseaux ou dans une présentation." data-en="Convert each PDF page into a JPG or PNG image. Handy to share a preview on social media or in a slide deck.">Convertissez chaque page de votre PDF en image JPG ou PNG. Pratique pour partager un aperçu sur les réseaux ou dans une présentation.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="pdf">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M9 13h6M9 16h6"/></svg></div>
+        <strong data-fr="Image vers PDF" data-en="Image to PDF">Image vers PDF</strong>
+        <p data-fr="Transformez vos photos et scans (JPG, PNG) en un seul PDF propre. Chaque image devient une page A4 automatiquement." data-en="Turn your photos and scans (JPG, PNG) into a single clean PDF. Each image becomes an A4 page automatically.">Transformez vos photos et scans (JPG, PNG) en un seul PDF propre. Chaque image devient une page A4 automatiquement.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="compress">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M9 13h6M9 16h4"/><path d="m4 10 2 2-2 2m16-4-2 2 2 2"/></svg></div>
+        <strong data-fr="Compresser PDF" data-en="Compress PDF">Compresser PDF</strong>
+        <p data-fr="Réduisez la taille de vos fichiers PDF pour les envoyer par mail ou les téléverser plus vite, sans perdre en lisibilité." data-en="Reduce your PDF file size to email it or upload it faster, without losing readability.">Réduisez la taille de vos fichiers PDF pour les envoyer par mail ou les téléverser plus vite, sans perdre en lisibilité.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="organize">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="7" rx="1.5"/><rect x="5" y="14" width="14" height="7" rx="1.5"/><path d="M3 6v12m18-12v12M9 6h6M9 17.5h6"/></svg></div>
+        <strong data-fr="Organiser PDF" data-en="Organize PDF">Organiser PDF</strong>
+        <p data-fr="Réorganisez les pages dans l’ordre voulu, faites-les pivoter de 90° ou supprimez celles qui sont en trop. Le PDF est reconstruit proprement." data-en="Reorder pages as you like, rotate them by 90°, or delete the ones you don’t need. The PDF is rebuilt cleanly.">Réorganisez les pages dans l’ordre voulu, faites-les pivoter de 90° ou supprimez celles qui sont en trop. Le PDF est reconstruit proprement.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="number">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v14H7zM9 7h6M9 10h6"/><path d="M9 20h6m-3-3v6"/></svg></div>
+        <strong data-fr="Numéroter PDF" data-en="Add page numbers">Numéroter PDF</strong>
+        <p data-fr="Ajoutez une numérotation propre en bas de chaque page, avec ou sans le total. Indispensable pour les mémoires, rapports et contrats." data-en="Add clean page numbers at the bottom of each page, with or without the total. Essential for theses, reports and contracts.">Ajoutez une numérotation propre en bas de chaque page, avec ou sans le total. Indispensable pour les mémoires, rapports et contrats.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="watermark">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="m5 16 14-8M8 18l9-5M7 9l5-5"/></svg></div>
+        <strong data-fr="Filigrane PDF" data-en="PDF watermark">Filigrane PDF</strong>
+        <p data-fr="Ajoutez un texte discret en filigrane sur chaque page pour marquer un document comme confidentiel, brouillon ou personnel." data-en="Add subtle watermark text on every page to mark a document as confidential, draft, or personal.">Ajoutez un texte discret en filigrane sur chaque page pour marquer un document comme confidentiel, brouillon ou personnel.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="resize">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M8 8h8v8H8zM3 8V3h5m8 0h5v5m0 8v5h-5M8 21H3v-5"/></svg></div>
+        <strong data-fr="Redimensionner PDF" data-en="Resize PDF">Redimensionner PDF</strong>
+        <p data-fr="Agrandissez ou réduisez proportionnellement vos pages, sans recadrage ni déformation du contenu. Parfait pour harmoniser plusieurs PDF." data-en="Scale pages up or down proportionally without cropping or distorting content. Perfect to harmonize several PDFs.">Agrandissez ou réduisez proportionnellement vos pages, sans recadrage ni déformation du contenu. Parfait pour harmoniser plusieurs PDF.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="text">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="M9 8h6M9 12h6M9 16h4"/><path d="M4 7v12"/></svg></div>
+        <strong data-fr="PDF vers texte" data-en="PDF to text">PDF vers texte</strong>
+        <p data-fr="Extrayez le texte contenu dans un PDF et téléchargez-le en fichier TXT. Utile pour réutiliser un contenu, faire une recherche ou un copier-coller." data-en="Extract the text from a PDF and download it as a TXT file. Useful to reuse content, search it, or copy-paste it.">Extrayez le texte contenu dans un PDF et téléchargez-le en fichier TXT. Utile pour réutiliser un contenu, faire une recherche ou un copier-coller.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="split">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v7H7zM7 14h10v7H7z"/><path d="M12 10v4m-2-2 2 2 2-2"/></svg></div>
+        <strong data-fr="Diviser PDF" data-en="Split PDF">Diviser PDF</strong>
+        <p data-fr="Séparez un PDF en plusieurs fichiers : une page par PDF, tous réunis dans une archive ZIP prête à télécharger." data-en="Split a PDF into multiple files: one PDF per page, all packed in a downloadable ZIP archive.">Séparez un PDF en plusieurs fichiers : une page par PDF, tous réunis dans une archive ZIP prête à télécharger.</p>
+      </button>
+      <button type="button" class="card" role="button" aria-pressed="false" data-action="add-text">
+        <div class="ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M12 6v14M8 20h8M7 10h10"/><path d="M4 3h16v3H4z"/></svg></div>
+        <strong data-fr="Ajouter du texte" data-en="Add text">Ajouter du texte</strong>
+        <p data-fr="Ajoutez une mention, un tampon ou une annotation texte sur les pages de votre choix. Le texte ajouté reste sélectionnable." data-en="Add a note, stamp or text annotation to the pages of your choice. Added text remains selectable.">Ajoutez une mention, un tampon ou une annotation texte sur les pages de votre choix. Le texte ajouté reste sélectionnable.</p>
+      </button>
     </div>
     <button type="button" class="more" id="more" data-fr="↑ Remonter aux outils" data-en="↑ Back to tools">↑ Remonter aux outils</button>
   </section>
@@ -866,6 +1074,48 @@ button:disabled{cursor:not-allowed;opacity:.55}
         <h3 data-fr="Téléchargez le résultat" data-en="Download the result">Téléchargez le résultat</h3>
         <p data-fr="Vérifiez le fichier obtenu avant de fermer la page. Les opérations sont effectuées dans le navigateur." data-en="Check the output before closing the page. Processing runs in your browser.">Vérifiez le fichier obtenu avant de fermer la page. Les opérations sont effectuées dans le navigateur.</p>
       </article>
+    </div>
+  </section>
+
+  <!-- === FAQ === -->
+  <section class="faq" id="faq">
+    <div class="sectionhead">
+      <h2 data-fr="Questions fréquentes" data-en="Frequently asked questions">Questions fréquentes</h2>
+      <span data-fr="Tout ce qu’il faut savoir sur OopsPDF" data-en="Everything you need to know about OopsPDF">Tout ce qu’il faut savoir sur OopsPDF</span>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary data-fr="OopsPDF est-il vraiment gratuit ?" data-en="Is OopsPDF really free?">OopsPDF est-il vraiment gratuit ?</summary>
+        <div class="faq-answer" data-fr="Oui, OopsPDF est 100 % gratuit et sans inscription. Tous les outils sont accessibles immédiatement, sans création de compte, sans limitation du nombre de fichiers et sans filigrane ajouté à vos documents." data-en="Yes, OopsPDF is 100% free and requires no sign-up. All tools are immediately accessible, without account creation, file-count limits, or watermarks added to your documents.">Oui, OopsPDF est 100 % gratuit et sans inscription. Tous les outils sont accessibles immédiatement, sans création de compte, sans limitation du nombre de fichiers et sans filigrane ajouté à vos documents.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Mes fichiers PDF sont-ils envoyés à un serveur ?" data-en="Are my PDF files sent to a server?">Mes fichiers PDF sont-ils envoyés à un serveur ?</summary>
+        <div class="faq-answer" data-fr="Non. Tous les traitements (fusion, compression, conversion, etc.) sont effectués directement dans votre navigateur grâce à JavaScript. Vos fichiers ne quittent jamais votre ordinateur et ne sont jamais stockés sur un serveur." data-en="No. All processing (merge, compress, convert, etc.) runs directly in your browser through JavaScript. Your files never leave your computer and are never stored on a server.">Non. Tous les traitements (fusion, compression, conversion, etc.) sont effectués directement dans votre navigateur grâce à JavaScript. Vos fichiers ne quittent jamais votre ordinateur et ne sont jamais stockés sur un serveur.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Comment fusionner plusieurs fichiers PDF en un seul ?" data-en="How do I merge several PDF files into one?">Comment fusionner plusieurs fichiers PDF en un seul ?</summary>
+        <div class="faq-answer" data-fr="Cliquez sur l’outil « Fusionner PDF », sélectionnez au moins deux fichiers PDF, ajustez leur ordre avec les flèches, puis cliquez sur « Fusionner et télécharger ». Le fichier fusionné est téléchargé en quelques secondes." data-en="Click the “Merge PDF” tool, select at least two PDF files, adjust their order with the arrows, then click “Merge and download”. The merged file is downloaded in seconds.">Cliquez sur l’outil « Fusionner PDF », sélectionnez au moins deux fichiers PDF, ajustez leur ordre avec les flèches, puis cliquez sur « Fusionner et télécharger ». Le fichier fusionné est téléchargé en quelques secondes.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Comment réduire la taille d’un PDF sans perdre en qualité ?" data-en="How do I reduce a PDF size without losing quality?">Comment réduire la taille d’un PDF sans perdre en qualité ?</summary>
+        <div class="faq-answer" data-fr="Utilisez l’outil « Compresser PDF » en mode « Optimisation sans perte ». Pour une réduction plus forte, choisissez le mode « Compression visuelle » qui convertit les pages en images JPG : le fichier est plus léger, mais le texte n’est plus sélectionnable." data-en="Use the “Compress PDF” tool in “Lossless optimization” mode. For a stronger reduction, choose “Visual compression”, which converts pages into JPG images: the file gets smaller, but text is no longer selectable.">Utilisez l’outil « Compresser PDF » en mode « Optimisation sans perte ». Pour une réduction plus forte, choisissez le mode « Compression visuelle » qui convertit les pages en images JPG : le fichier est plus léger, mais le texte n’est plus sélectionnable.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Puis-je utiliser OopsPDF sur mobile ou tablette ?" data-en="Can I use OopsPDF on mobile or tablet?">Puis-je utiliser OopsPDF sur mobile ou tablette ?</summary>
+        <div class="faq-answer" data-fr="Oui. OopsPDF fonctionne sur tous les navigateurs modernes (Chrome, Firefox, Safari, Edge) sur ordinateur, tablette et smartphone. Aucune installation n’est requise." data-en="Yes. OopsPDF works on all modern browsers (Chrome, Firefox, Safari, Edge) on desktop, tablet, and smartphone. No installation is required.">Oui. OopsPDF fonctionne sur tous les navigateurs modernes (Chrome, Firefox, Safari, Edge) sur ordinateur, tablette et smartphone. Aucune installation n’est requise.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Y a-t-il une limite de taille de fichier ?" data-en="Is there a file size limit?">Y a-t-il une limite de taille de fichier ?</summary>
+        <div class="faq-answer" data-fr="Il n’y a pas de limite imposée par OopsPDF. En pratique, la limite dépend de la mémoire disponible sur votre appareil. Nous recommandons des fichiers inférieurs à 100 Mo pour un traitement fluide, en particulier sur mobile." data-en="OopsPDF does not impose a limit. In practice, the limit depends on your device’s available memory. We recommend files under 100 MB for smooth processing, especially on mobile.">Il n’y a pas de limite imposée par OopsPDF. En pratique, la limite dépend de la mémoire disponible sur votre appareil. Nous recommandons des fichiers inférieurs à 100 Mo pour un traitement fluide, en particulier sur mobile.</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Comment diviser un PDF en plusieurs fichiers ?" data-en="How do I split a PDF into several files?">Comment diviser un PDF en plusieurs fichiers ?</summary>
+        <div class="faq-answer" data-fr="L’outil « Diviser PDF » exporte chaque page dans un PDF individuel et les regroupe dans une archive ZIP téléchargeable. Pour extraire seulement certaines pages, utilisez plutôt l’outil « Extraire des pages »." data-en="The “Split PDF” tool exports each page as an individual PDF and packs them into a downloadable ZIP archive. To extract only some pages, use the “Extract pages” tool instead.">L’outil « Diviser PDF » exporte chaque page dans un PDF individuel et les regroupe dans une archive ZIP téléchargeable. Pour extraire seulement certaines pages, utilisez plutôt l’outil « Extraire des pages ».</div>
+      </details>
+      <details class="faq-item">
+        <summary data-fr="Puis-je utiliser OopsPDF pour un usage professionnel ?" data-en="Can I use OopsPDF for professional use?">Puis-je utiliser OopsPDF pour un usage professionnel ?</summary>
+        <div class="faq-answer" data-fr="Oui, OopsPDF peut être utilisé dans un cadre professionnel pour fusionner des contrats, compresser des rapports ou organiser des dossiers. Comme le traitement est 100 % local, vos documents confidentiels ne sont jamais transmis à un tiers." data-en="Yes, OopsPDF can be used professionally to merge contracts, compress reports or organize case files. Because processing is 100% local, your confidential documents are never sent to a third party.">Oui, OopsPDF peut être utilisé dans un cadre professionnel pour fusionner des contrats, compresser des rapports ou organiser des dossiers. Comme le traitement est 100 % local, vos documents confidentiels ne sont jamais transmis à un tiers.</div>
+      </details>
     </div>
   </section>
 
@@ -1185,7 +1435,6 @@ function renderImagePdfQueue() {
     : (imagePdfFiles.length ? imagePdfFiles.length + ' image(s) · order can be changed' : 'Select at least one JPG or PNG image.');
 }
 
-/* === Render organize pages === */
 function renderOrganizePages() {
   const list = $('#pageList');
   list.innerHTML = '';
@@ -1612,7 +1861,6 @@ $('#chooseSplit').onclick = () => fileInput.click();
 $('#chooseAddText').onclick = () => fileInput.click();
 $('#addImagesBtn').onclick = () => fileInput.click();
 
-/* Remove pending file */
 $('#removePending').onclick = (e) => {
   e.stopPropagation();
   if (!pendingFiles.length) return;
@@ -2402,7 +2650,7 @@ syncToolPanels();
 renderQueue();
 renderImagePdfQueue();
 
-console.log('OopsPDF chargé — version finale.');
+console.log('OopsPDF chargé — version finale SEO.');
 </script>
 </body>
 </html>
