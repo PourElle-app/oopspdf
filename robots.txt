@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pourelle-app.github.io/oopspdf/sitemap.xml
